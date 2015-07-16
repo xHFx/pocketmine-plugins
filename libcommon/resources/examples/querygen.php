@@ -28,7 +28,7 @@ namespace aliuly\example{
 		public function onEnable(){
 			$this->players = [];
 			$this->maxplayers = [];
-			foreach (["namco:19132"] as $cfg) {
+			foreach (["f1.darkrealms.cf:19132", "f2.darkrealms.cf:19132] as $cfg) {
 				$r = explode(":",$cfg,2);
 				if (!isset($r[1])) $r[1] = 19132;
 				list($host,$port) = $r;
